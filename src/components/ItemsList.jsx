@@ -16,20 +16,18 @@ export default function ItemsList({ itemsText }) {
   const PairedItemCard = ({ itemOne, itemTwo }) => {
     if (itemOne && itemTwo) {
       return (
-        <li>
+        <li className="list_text">
           <span className="list_item_name">{itemOne}</span> is paired with{" "}
           <span className="list_item_name">{itemTwo}</span>
         </li>
       );
     } else {
       return (
-      <li className="warning">
+      <li className="warning list_text">
         <span className="list_item_name">{itemOne}</span> is the odd one out!
       </li>)
     }
   };
-
-  console.log(randomPairs)
 
   return (
     <>
